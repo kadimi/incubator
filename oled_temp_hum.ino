@@ -65,8 +65,8 @@ void loop() {
 
   float humidity = dht.readHumidity();
   float temperature = dht.readTemperature();
-  unsigned int elapsed_m = millis() * SPEED + ADDITIONAL_TIME * 1000;
-  unsigned int elapsed_s = elapsed_m / 1000;
+  unsigned long elapsed_m = millis() * SPEED + ADDITIONAL_TIME * 1000;
+  unsigned long elapsed_s = elapsed_m / 1000;
   unsigned short int seconds = elapsed_s % 60;
   unsigned short int minutes = elapsed_s % 3600 / 60;
   unsigned short int hours = elapsed_s % 86400 / 3600;
