@@ -1,8 +1,3 @@
-/**
- * @link https://wokwi.com/projects/325784047419654738
- * @author Nabil Kadimi (nabil@kadimi.com)
- */
-
 #include "DHT.h"
 #include <Wire.h>
 #include <Adafruit_GFX.h>
@@ -25,9 +20,9 @@
 #define TEMPERATURE_OPTIMAL 37.5
 #define TEMPERATURE_MIN 37.2
 #define TEMPERATURE_MAX 38.9
-#define HUMIDITY_OPTIMAL 60
-#define HUMIDITY_MIN 50
-#define HUMIDITY_MAX 65
+#define HUMIDITY_OPTIMAL 60.0
+#define HUMIDITY_MIN 50.0
+#define HUMIDITY_MAX 65.0
 #define TURN_EVERY 10
 #define TURN_FOR 1
 
@@ -55,7 +50,6 @@ void setup() {
   pinMode(FAN, OUTPUT);
   pinMode(ATOMIZER, OUTPUT);
 
-  Serial.begin(9600);
   dht.begin();
   oled.begin(SSD1306_SWITCHCAPVCC, 0x3C);
   oled.setTextColor(WHITE);
