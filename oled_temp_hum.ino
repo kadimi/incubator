@@ -3,7 +3,7 @@
  * @author Nabil Kadimi (nabil@kadimi.com)
  * @version 0.1
  * @link https://wokwi.com/projects/325784047419654738
-q */
+ */
 
 #include "DHT.h"
 #include <Wire.h>
