@@ -1,8 +1,6 @@
 /**
- * @file oled_temp_hum.ino
- * @author Nabil Kadimi (nabil@kadimi.com)
- * @version 0.1
  * @link https://wokwi.com/projects/325784047419654738
+ * @author Nabil Kadimi (nabil@kadimi.com)
  */
 
 #include "DHT.h"
