@@ -7,4 +7,4 @@ https://wokwi.com/projects/325784047419654738
 
 ## Screenshot
 
-<img src="https://i.imgur.com/ml2xTYO.png" alt="kadimi/incubator Screenshot" height="200"/>
+<img src="./assets/screenshot.png" alt="kadimi/incubator Screenshot" height="200"/>
