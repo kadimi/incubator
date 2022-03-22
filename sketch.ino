@@ -29,14 +29,14 @@
 Adafruit_SSD1306 oled(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 DHT dht(DHTPIN, DHTTYPE);
 
-void textAt(char text[], int x, int y, int size = 1) {
+void textAt(String text, int x, int y, int size = 1) {
   oled.setTextSize(size);
   oled.setCursor(x, y);
   oled.print(text);
   return;
 }
 
-void showStatus(char label4[], int element, boolean status, boolean highlight_if) {
+void showStatus(String label4, int element, boolean status, boolean highlight_if) {
   textAt(label4, 2 + ( 4 + (element-4) * 30) , 53);
   if (highlight_if && status) {
     oled.drawRect(4 + (element-4)*30, 51, 27, 11, WHITE);
@@ -185,8 +185,8 @@ void loop() {
   textAt(helper, 6, 41);
   dtostrf(temperature, 4 ,1, helper);
   textAt(helper, 65, 18, 2);
-  textAt("C", 116, 25);
   textAt(".", 111, 20);
+  textAt("C", 116, 25);
   dtostrf(humidity, 4 ,1, helper);
   textAt(helper, 65, 36, 2);
   textAt("%", 113, 43);
