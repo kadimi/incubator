@@ -138,14 +138,14 @@ void loop() {
     sprintf(helper, " %s %d", ANIMAL, cycle);
     textAt(helper, 0, 1);
     dtostrf(temperature_optimal, 4 ,1, helper);
-    textAt(helper, 70, 1);
+    textAt(helper, 72, 1);
     dtostrf(humidity_optimal, 4 ,1, helper);
-    textAt(helper, 100, 1);
+    textAt(helper, 102, 1);
   } else {
     sprintf(helper, " %s", AUTHOR);
     textAt(helper, 0, 1);
   }
-  // textAt("---------------------", 0, 13);
+  textAt("---------------------", 0, 7);
 
   // Control
   boolean must_reverse;
