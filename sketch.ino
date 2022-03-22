@@ -139,6 +139,7 @@ void loop() {
     textAt(helper, 0, 1);
     dtostrf(temperature_optimal, 4 ,1, helper);
     textAt(helper, 72, 1);
+    textAt("|", 96, 1);
     dtostrf(humidity_optimal, 4 ,1, helper);
     textAt(helper, 102, 1);
   } else {
